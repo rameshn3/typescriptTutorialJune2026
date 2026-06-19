@@ -72,3 +72,16 @@ function sumAll(...numbers:number[]):number{
 }
 let total:number = sumAll(1, 2, 3, 4, 5);
 console.log(`The total is: ${total}`);
+
+
+//callback functions
+function processUserInput(callback:(input:string) => void){
+    let input:string = "User Input";
+    callback(input);
+}
+
+function displayInput(input:string){
+    console.log(`Received input: ${input}`);
+}
+
+processUserInput(displayInput);

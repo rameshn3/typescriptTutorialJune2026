@@ -13,7 +13,7 @@ export class BankAccount implements IBankAccount {
 
     deposit(amount: number): void {
         if (amount > 0) {
-            this.balance += amount;
+            this.balance += amount; //
             console.log(`Deposited ${amount}. New balance: ${this.balance}`);
         } else {
             console.log("Deposit amount must be positive.");

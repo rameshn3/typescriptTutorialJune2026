@@ -1,4 +1,4 @@
-let n1:number = 10;
+let n1:number = -10;
 if(n1 > 0){
     console.log("The number is positive."); 
 }
